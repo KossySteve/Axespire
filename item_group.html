@@ -30,19 +30,14 @@
        opacity: 1;
          color: white;    
      }
+     
      nav ul li a {
        font-size : 19px;   
-     }
-     .more_settings button {
-		font-size: 11px;     
-     }
-     .more_settings table {
-		font-size: 11px;
      }
     
  </style>
  </head>
-<body>
+ <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark mx-0">
     <!-- Brand -->
     <a class="navbar-brand py-0 text-white" href="#">Logo</a>
@@ -194,13 +189,13 @@
         </div>
       </li>
     </ul>
-  </nav>       
-  <section>
+  </nav>
+     <section>
          <div class="container-fluid">
              <div class="row mt-4">
-               <div class="col-3 bg-secondary pt-2">
-               	 <h6 class="text-white">Items</h6>
-                 <div class="border border-secondary bg-light more_settings">
+               <div class="col-3 bg-secondary pr-2 pt-0">
+               	 <h6 class="text-white">Location</h6>
+                 <div class="border border-secondary bg-light pl-2">
                    <h5>Item</h5>
                      <hr>
                      <h6>Record :</h6>
@@ -213,9 +208,7 @@
                        </thead>
                        <tbody>
                          <tr>
-                           <td>
-                               <input type="text" class="form-control border-primary py-n3 mt-n2" id="email" name="email"> 
-                           </td>
+                           <td>John</td>
                            <td>
                              <div class="input-group mt-n2 ">
                                <input type="text" class="form-control border border-primary py-0">
@@ -231,12 +224,12 @@
                    <div class="border border-primary"></div>
                </div>
                <div class="col-9 bg-secondary">
-               			<h6 class="text-white">Item details</h6>
-                       <form>
-                       <div class="form-row bg-light mt-3 ">
-                          <div class="col pr-3">
+               		  <h6 class="text-white">Location Structure Details</h6>
+                      <form>
+                       	<div class="form-row bg-light mt-3"> 
+                           <div class="col">
                            <h4>General Details</h4>
-                           <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
+                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
                                  <label for="email" class="mr-2">Code:</label>
                                  <input type="text" class="form-control w-75 border-primary py-n3" id="email" name="email"> 
                              </div>
@@ -246,11 +239,10 @@
                              </div>
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
                                <label for="comment" class="">Description:</label>
-                               <textarea class="form-control  w-75 border border-primary"  rows="2" id="comment"></textarea>
+                               <textarea class="form-control  w-75 border border-primary" rows="2" id="comment"></textarea>
                              </div>
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Type:</label>
-                                 
+                                 <label for="email" class="mr-2">Group Type:</label>
                                  <div class="input-group w-75">
                                    <input type="text" class="form-control border border-primary ">
                                    <div class="input-group-append">
@@ -259,7 +251,25 @@
                                  </div>
                              </div>
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Group:</label>
+                                <label for="email" class="mr-2">Tax Group:</label>
+                                <div class="input-group w-75">
+                                  <input type="text" class="form-control border border-primary ">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
+                                <label for="email" class="mr-2">Tax Authority:</label>
+                                <div class="input-group w-75">
+                                  <input type="text" class="form-control border border-primary ">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
+                                  </div>
+                                </div>
+                            </div>
+                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
+                                 <label for="email" class="mr-2">Ref Code:</label>
                                  <div class="input-group w-75">
                                    <input type="text" class="form-control border border-primary ">
                                    <div class="input-group-append">
@@ -267,146 +277,44 @@
                                    </div>
                                  </div>
                              </div>
-                            <div class="row">
-                                 <div class="col-3 mr-1"></div>
-                                 <div class="col-3 form-group form-check d-flex flex-row text-nowrap ">
-                                   <label class="form-check-label">
-                                       <input class="form-check-input" type="checkbox" name="remember" required> Is Group.
-                                   </label>
-                                 </div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-3 mr-1"></div>
-                                 <div class="col-3 form-group form-check d-flex flex-row text-nowrap ">
-                                   <label class="form-check-label">
-                                       <input class="form-check-input" type="checkbox" name="remember" required> Is Group.
-                                   </label>
-                                 </div>
-                             </div>
+                             <div class="d-flex flex-row">
+                                <div class="mr-5"></div>
+                                <div class="form-group form-check d-flex flex-column ml-4">
+                                	<label class="form-check-label">
+                                  		<input class="form-check-input" type="checkbox" name="remember" required> Is Group
+                                	</label>
+                                </div>
+                            </div>
                          </div>
-                         <div class="col">
-                         <h4>Price Details</h4>
+                         <div class="col ml-3 mt-4 pt-3">
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Company:</label>
-                                 <div class="input-group w-75 ">
-                                   <input type="text" class="form-control border border-primary ">
-                                   <div class="input-group-append">
-                                     <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
-                                   </div>
-                                 </div>
+                                 <label for="email" class="mr-4">Percentage:</label>
+                                 <input type="text" class="form-control w-75 border-primary py-n3" id="email" name="email"> 
                              </div>
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Brand:</label>
-                                 <div class="input-group w-75">
-                                   <input type="text" class="form-control border border-primary ">
-                                   <div class="input-group-append">
-                                     <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
-                                   </div>
-                                 </div>
-                             </div>
-                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Model:</label>
-                                 <div class="input-group w-75">
-                                   <input type="text" class="form-control border border-primary ">
-                                   <div class="input-group-append">
-                                     <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
-                                   </div>
-                                 </div>
-                             </div>
-                            <div class="row">
-                                 <div class="col-3 mr-1"></div>
-                                 <div class="col-3 form-group form-check d-flex flex-row text-nowrap ">
-                                   <label class="form-check-label">
-                                       <input class="form-check-input" type="checkbox" name="remember" required> Is Batch/Serial No. req.
-                                   </label>
-                                 </div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-3 mr-1"></div>
-                                 <div class="col-3 form-group form-check d-flex flex-row text-nowrap ">
-                                   <label class="form-check-label">
-                                       <input class="form-check-input" type="checkbox" name="remember" required> Is Auto Serial No. req
-                                   </label>
-                                 </div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-3 mr-1"></div>
-                                 <div class="col-3 form-group form-check d-flex flex-row text-nowrap ">
-                                   <label class="form-check-label">
-                                       <input class="form-check-input" type="checkbox" name="remember" required> Is Favourite item.
-                                   </label>
-                                 </div>
-                             </div>
+                                <label for="GTS" class="form-check-label mr-2">Is GTS Group
+                                    <input class="form-check-input ml-3" type="checkbox" name="remember" required>
+                                </label>
+                                
+                            </div>
                              <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Base UOM:</label>
-                                 <div class="input-group w-75">
-                                   <input type="text" class="form-control border border-primary ">
-                                   <div class="input-group-append">
-                                     <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
-                                   </div>
-                                 </div>
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">HSN/SACCode:</label>
-                                 <div class="input-group w-75">
-                                   <input type="text" class="form-control border border-primary ">
-                                   <div class="input-group-append">
-                                     <button class="btn btn-light border border-primary" type="submit"><i class="fas fa-search"></i></button>
-                                   </div>
-                                 </div>
-                             </div>
-                         </div>
-                        <div class="col">
-                         <h4>Additional Details</h4>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Standard Cost:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Sale Rate:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Purchase Rate:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Min Rate:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Max Rate:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Sale Rev%:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                             <div class="form-group d-flex flex-row text-nowrap align-items-center justify-content-between">
-                                 <label for="email" class="mr-2">Purchase Rev%:</label>
-                                 <input type="text" class="form-control w-50 border-primary py-n3" id="email" name="email"> 
-                             </div>
-                         </div>
+                                 <label for="email" class="mr-2">VAT/ GTS Type:</label>
+                                 <input type="text" class="form-control w-75 border-primary py-n3" id="email" name="email"> 
+                             </div> </div>
+                         <div class="col row"></div>
                        </div>
                      </form>
                     <div class="d-flex flex-row justify-content-center">
                         <button type="submit" class="btn btn-primary mx-5 my-2 px-5">Submit</button>
                     </div>
-                    <div class="bg-light border border-secondary px-0 py-0 more_settings">
+                    <div class="bg-light border border-secondary px-0">
                       <div class="btn-group mb-1">
-                       <button type="button" class="btn btn-light border border-primary py-0">Configuration</button>
+                       <button type="button" class="btn btn-light border border-primary py-0">Service Type Details</button>
                        <button type="button" class="btn btn-light border border-primary py-0">Variation</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Stock details</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Item Location Repeat/Configuration</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Add On</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Alternate Items</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Stock levels</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Sale Price</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Purchase Price</button>
-                       <button type="button" class="btn btn-light border border-primary py-0">Item Barcode</button>
+                       <button type="button" class="btn btn-light border border-primary py-0">Tax / Account / Item Group Configuration</button>
                      </div>
                     </div>
-                  <div class="container-fluid more_settings">            
+                  <div class="container-fluid">            
                      <table class="table table-bordered table-secondary table-striped table-hover py-0">
                        <thead>
                          <tr>
@@ -430,5 +338,7 @@
              </div>
          </div>
      </section>
-</body>
-</html>
+ </body>
+ </html>
+ 
+ 
